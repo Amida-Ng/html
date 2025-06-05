@@ -1,0 +1,234 @@
+*{
+    
+    .emoji-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 60px;
+        opacity: 0.08;
+        width: 300%;
+        height: 100%;
+        z-index: -1;
+        animation: float 40s linear infinite;
+        white-space: nowrap;
+        overflow: hidden;
+        pointer-events: none;
+}
+}
+
+/* 🌸 Arrière-plan animé avec emojis visibles */
+.emoji-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 60px;
+    opacity: 0.08;
+    width: 300%;
+    height: 100%;
+    z-index: -1;
+    animation: float 40s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* 🌟 Animation qui défile les emojis de droite à gauche */
+@keyframes float {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-66%); }
+}
+
+/* 🌷 Fond général + police douce */
+body {
+    background-color: #FFF0F5;
+    font-family: 'Quicksand', sans-serif;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌼 Container central pour tout le contenu */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffffdd;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* 🌺 Titres principaux */
+h1 {
+    color: #D16BA5;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* 🌺 Titres secondaires */
+h2 {
+    color: #c84c85;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+/* ✏️ Paragraphe doux */
+p {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    color: #444;
+}
+
+/* 📸 Style pour photo de profil */
+.photo-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #D16BA5;
+}
+
+/* 🔗 Liens */
+a {
+    color: #D16BA5;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* 📋 Listes de compétences */
+.skill-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.skill-list li {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* 📊 Barres de progression */
+.bar {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #D16BA5;
+    height: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    border-radius: 10px 0 0 10px;
+    font-size: 0.9em;
+    animation: grow 1.5s ease-out;
+}
+
+@keyframes grow {
+    from { width: 0; }
+    to { width: 100%; }
+}
+/* 📷 Images de projets */
+.project-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    margin: 15px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 📦 Sections projets */
+.projet {
+    margin-bottom: 60px;
+    text-align: left;
+}
+.projet h2 {
+    color: #D16BA5;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/* 📥 Formulaire de contact */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #D16BA5;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #D16BA5;
+    box-shadow: 0 0 5px #D16BA5aa;
+}
+
+.contact-form button {
+    background-color: #D16BA5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: center;
+}
+
+.contact-form button:hover {
+    background-color: #b94794;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D16BA5;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #D16BA5;
+    color: white;
+}
